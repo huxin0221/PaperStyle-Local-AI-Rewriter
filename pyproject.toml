@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scholarstyle-studio"
+version = "0.2.0"
+description = "Local scientific writing style learning and manuscript revision"
+requires-python = ">=3.11,<3.12"
+dependencies = ["PyQt5>=5.15.9,<6", "python-docx>=1.1,<2", "pypdf>=5,<7", "requests>=2.32,<3"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+scholarstyle = "scholarstyle.gui:main"
+
+[tool.setuptools.packages.find]
+include = ["scholarstyle*"]
+
+[tool.setuptools.package-data]
+scholarstyle = ["assets/*.svg", "gui_recovery.pyc"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
