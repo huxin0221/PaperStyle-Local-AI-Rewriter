@@ -1,8 +1,8 @@
 <div align="center">
 
-# ScholarStyle Studio
+# PaperStyle — Local AI Paper Rewriter
 
-**Scientific writing in your team's style — with local AI and revisions you can inspect.**
+**Rewrite papers in your team's style — locally, with changes you can review.**
 
 Learn from reference papers. Freeze a reusable style profile. Revise, review, and export your manuscript.
 
@@ -21,7 +21,7 @@ Learn from reference papers. Freeze a reusable style profile. Revise, review, an
 
 ## What it does
 
-ScholarStyle Studio is a Python desktop application for researchers who want to make manuscript prose more consistent with a supervisor's or team's published writing. It combines reference-paper retrieval, reusable style rules, local Ollama inference, and a paragraph-by-paragraph review workflow.
+PaperStyle is a Python desktop application for researchers who want to make manuscript prose more consistent with a supervisor's or team's published writing. It combines reference-paper retrieval, reusable style rules, local Ollama inference, and a paragraph-by-paragraph review workflow.
 
 | Capability | What you can do |
 | --- | --- |
@@ -37,6 +37,8 @@ ScholarStyle Studio is a Python desktop application for researchers who want to 
 
 **Current build:** version 0.2.0 requires **CPython 3.11**. The GUI currently loads a bundled recovery bytecode file, `scholarstyle/gui_recovery.pyc`, with editable layout customizations in `gui.py`. Most application logic is available as Python source, but the recovered GUI implementation is not yet fully restored to source. Keep this file when copying or packaging the project.
 
+The repository is now **PaperStyle-Local-AI-Rewriter** (formerly ScholarStyle Studio). The current app and screenshots still show the original name; the `scholarstyle` command, Python package, `SCHOLARSTYLE_DATA` variable, and data directory retain their existing names.
+
 ## Quick start
 
 ### 1. Install the desktop application
@@ -46,8 +48,8 @@ Use Python **3.11**, Git, and a desktop environment. The project has been tested
 **macOS / Linux**
 
 ```bash
-git clone https://github.com/huxin0221/ScholarStyle_Studio.git
-cd ScholarStyle_Studio
+git clone https://github.com/huxin0221/PaperStyle-Local-AI-Rewriter.git
+cd PaperStyle-Local-AI-Rewriter
 python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
@@ -58,8 +60,8 @@ python launch.py
 **Windows — Command Prompt**
 
 ```bat
-git clone https://github.com/huxin0221/ScholarStyle_Studio.git
-cd ScholarStyle_Studio
+git clone https://github.com/huxin0221/PaperStyle-Local-AI-Rewriter.git
+cd PaperStyle-Local-AI-Rewriter
 py -3.11 -m venv .venv
 .venv\Scripts\activate
 python -m pip install --upgrade pip
@@ -233,7 +235,7 @@ scholarstyle/
 
 The publication preparation run passed **52 tests** on macOS with CPython 3.11. These cover document handling, profile updates, sampling/cache behavior, revision checks, recovery, GUI preferences, model preparation, and launch behavior. External services and installation branches use test doubles where appropriate; this is not validation of every model or platform. See [VALIDATION.md](VALIDATION.md).
 
-Please report reproducible issues with Python/OS versions, the model tag, and a minimal **non-confidential** example at [GitHub Issues](https://github.com/huxin0221/ScholarStyle_Studio/issues).
+Please report reproducible issues with Python/OS versions, the model tag, and a minimal **non-confidential** example at [GitHub Issues](https://github.com/huxin0221/PaperStyle-Local-AI-Rewriter/issues).
 
 ## License
 
