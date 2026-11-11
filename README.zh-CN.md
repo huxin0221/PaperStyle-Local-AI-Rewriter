@@ -1,4 +1,4 @@
-# ScholarStyle Studio
+# PaperStyle — 本地 AI 论文改写助手
 
 **让论文表达更贴近团队风格：本地 AI、可复用风格档案、逐段可审阅修改。**
 
@@ -8,7 +8,7 @@
 
 *截图来自真实 Qt 界面，仅使用合成演示文本。图中修改示例为文档人工编写，不代表模型实测效果。*
 
-ScholarStyle Studio 是面向科研写作的 Python 桌面应用。导入导师或团队的参考论文，建立可持久化的风格档案，再使用本机 Ollama 修改草稿；每段的修改、解释和来源都可以查看、编辑与确认，最后导出 Word。
+PaperStyle 是面向科研写作的 Python 桌面应用。导入导师或团队的参考论文，建立可持久化的风格档案，再使用本机 Ollama 修改草稿；每段的修改、解释和来源都可以查看、编辑与确认，最后导出 Word。
 
 ## 主要功能
 
@@ -26,6 +26,8 @@ ScholarStyle Studio 是面向科研写作的 Python 桌面应用。导入导师�
 
 > **当前版本要求 CPython 3.11。** GUI 暂时依赖随项目提供的 `scholarstyle/gui_recovery.pyc` 恢复文件，`gui.py` 包含可编辑的布局调整。核心功能大部分提供 Python 源码，但 GUI 实现尚未完整恢复为源码；复制和打包时必须保留这个 `.pyc` 文件。
 
+仓库已更名为 **PaperStyle-Local-AI-Rewriter**（原名 ScholarStyle Studio）。当前应用界面和截图仍显示原名称；`scholarstyle` 启动命令、Python 包名、`SCHOLARSTYLE_DATA` 环境变量和数据目录沿用原名称。
+
 ## 快速开始
 
 ### 1. 安装项目
@@ -35,8 +37,8 @@ ScholarStyle Studio 是面向科研写作的 Python 桌面应用。导入导师�
 **macOS / Linux：**
 
 ```bash
-git clone https://github.com/huxin0221/ScholarStyle_Studio.git
-cd ScholarStyle_Studio
+git clone https://github.com/huxin0221/PaperStyle-Local-AI-Rewriter.git
+cd PaperStyle-Local-AI-Rewriter
 python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
@@ -47,8 +49,8 @@ python launch.py
 **Windows 命令提示符：**
 
 ```bat
-git clone https://github.com/huxin0221/ScholarStyle_Studio.git
-cd ScholarStyle_Studio
+git clone https://github.com/huxin0221/PaperStyle-Local-AI-Rewriter.git
+cd PaperStyle-Local-AI-Rewriter
 py -3.11 -m venv .venv
 .venv\Scripts\activate
 python -m pip install --upgrade pip
@@ -194,7 +196,7 @@ python scripts/capture_screenshots.py
 
 截图脚本使用真实 Qt 控件离屏渲染，仅生成合成演示数据，不连接 Ollama 或 OpenAlex。代码模块说明见[英文 README](README.md#development)。
 
-反馈问题时，请在 [Issues](https://github.com/huxin0221/ScholarStyle_Studio/issues) 附上系统、Python 版本、模型名称和不含机密信息的最小示例。
+反馈问题时，请在 [Issues](https://github.com/huxin0221/PaperStyle-Local-AI-Rewriter/issues) 附上系统、Python 版本、模型名称和不含机密信息的最小示例。
 
 ## 许可
 
